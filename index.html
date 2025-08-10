@@ -1,130 +1,142 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>DORATEX • Pościel i Tekstylia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DORATEX - Pościel i tekstylia</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #ffffff;
-      color: #222;
-      text-align: center;
-      padding: 2rem;
-    }
-    .avatar {
-      width: 120px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2.2rem;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
       color: #17297e;
-      font-weight: bold;
-      letter-spacing: 1px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
-    .description {
-      max-width: 540px;
-      margin: 0 auto 2rem auto;
+
+    header {
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      max-width: 120px;
+      height: auto;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0 auto;
       line-height: 1.6;
       font-size: 1rem;
     }
-    ul.links {
-      list-style: none;
-      padding: 0;
-      max-width: 340px;
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem;
+      max-width: 500px;
       margin: 0 auto;
     }
-    ul.links li {
-      margin: 0.6rem 0;
-    }
-    ul.links a {
-      text-decoration: none;
-      color: #ffffff;
-      background: #17297e;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+
+    a.button {
       display: block;
-      width: 100%;
-      box-sizing: border-box;
-      font-weight: bold;
-      transition: all 0.2s ease;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      border: 2px solid #da1a0c;
-    }
-    ul.links a:hover {
-      background: #0f1e5a;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    .section-title {
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin: 1.5rem 0 0.5rem 0;
-      color: #17297e;
-      text-transform: uppercase;
-    }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-      line-height: 1.6;
-    }
-    footer a {
-      color: #17297e;
+      background-color: #17297e;
+      color: #ffffff;
+      padding: 0.9rem 1.2rem;
       text-decoration: none;
-      border-bottom: 1px dotted transparent;
+      border: 2px solid #da1a0c;
+      border-radius: 8px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
+    a.button:hover {
+      background-color: #0f1d57;
+      transform: scale(1.02);
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+
+    footer {
+      background-color: #17297e;
+      color: #ffffff;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    footer p, footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
     footer a:hover {
-      border-bottom: 1px dotted #17297e;
+      text-decoration: underline;
+    }
+
+    /* Responsywność */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+      }
+      a.button {
+        font-size: 1rem;
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Logo -->
-  <img src="logo.png" alt="Doratex logo" class="avatar">
+  <header>
+    <img src="logo.png" alt="Logo Doratex" />
+    <h1>DORATEX</h1>
+    <p>
+      Nasza firma powstała w 2001 roku. Jesteśmy producentem wysokiej jakości pościeli i tekstyliów – 
+      w swojej ofercie posiadamy także kołdry, poduszki, poszewki, prześcieradła oraz ręczniki 
+      z certyfikowanych surowców najwyższej jakości.
+    </p>
+  </header>
 
-  <!-- Nazwa -->
-  <h1></h1>
+  <div class="button-container">
+    <a class="button" href="https://allegro.pl/uzytkownik/doratex_sklep" target="_blank">PRZEGLĄDAJ NASZE PRODUKTY NA ALLEGRO</a>
+    <a class="button" href="https://allegro.pl/uzytkownik/doratex_sklep?allegro-days=1&strefa-okazji=1&supercena=1" target="_blank">PROMOCJE I OFERTY SPECJALNE</a>
+  </div>
 
-  <!-- Opis firmy -->
-  <p class="description">
-    Nasza firma powstała w 2001 roku.<br>
-    Jesteśmy producentem wysokiej jakości pościeli i tekstyliów – w swojej ofercie posiadamy także kołdry, poduszki, poszewki, prześcieradła oraz ręczniki z certyfikowanych surowców najwyższej jakości.
-  </p>
+  <h2>KATEGORIE PRODUKTÓW</h2>
+  <div class="button-container">
+    <a class="button" href="https://allegro.pl/uzytkownik/doratex_sklep?string=komplet%20pościeli" target="_blank">KOMPLETY POŚCIELI</a>
+    <a class="button" href="https://allegro.pl/uzytkownik/doratex_sklep?string=kołdra" target="_blank">KOŁDRY</a>
+    <a class="button" href="https://allegro.pl/uzytkownik/doratex_sklep?string=prześcieradło" target="_blank">PRZEŚCIERADŁA</a>
+    <a class="button" href="https://allegro.pl/uzytkownik/doratex_sklep?srsltid=AfmBOopZxkMyiQeUzIog-cWsZUaplpoV_q2PvsGIJEE1w0u9gGR-nu3s&string=ręcznik" target="_blank">RĘCZNIKI</a>
+    <a class="button" href="https://allegro.pl/uzytkownik/doratex_sklep?string=pościel%20dziecięca" target="_blank">DLA DZIECI</a>
+  </div>
 
-  <!-- Główne przyciski -->
-  <ul class="links">
-    <li><a href="https://allegro.pl/uzytkownik/doratex_sklep" target="_blank">PRZEGLĄDAJ NASZE PRODUKTY NA ALLEGRO</a></li>
-    <li><a href="https://allegro.pl/uzytkownik/doratex_sklep?allegro-days=1&strefa-okazji=1&supercena=1" target="_blank">PROMOCJE I OFERTY SPECJALNE</a></li>
-  </ul>
+  <h2>OBSERWUJ NAS</h2>
+  <div class="button-container">
+    <a class="button" href="https://facebook.com" target="_blank">FACEBOOK</a>
+    <a class="button" href="https://instagram.com" target="_blank">INSTAGRAM</a>
+  </div>
 
-  <!-- Kategorie -->
-  <div class="section-title">Kategorie produktów</div>
-  <ul class="links">
-    <li><a href="https://allegro.pl/uzytkownik/doratex_sklep?string=komplet%20pościeli" target="_blank">KOMPLETY POŚCIELI</a></li>
-    <li><a href="https://allegro.pl/uzytkownik/doratex_sklep?string=kołdra" target="_blank">KOŁDRY</a></li>
-    <li><a href="https://allegro.pl/uzytkownik/doratex_sklep?string=prześcieradło" target="_blank">PRZEŚCIERADŁA</a></li>
-    <li><a href="https://allegro.pl/uzytkownik/doratex_sklep?srsltid=AfmBOopZxkMyiQeUzIog-cWsZUaplpoV_q2PvsGIJEE1w0u9gGR-nu3s&string=ręcznik" target="_blank">RĘCZNIKI</a></li>
-    <li><a href="https://allegro.pl/uzytkownik/doratex_sklep?string=pościel%20dziecięca" target="_blank">DLA DZIECI</a></li>
-  </ul>
-
-  <!-- Social media -->
-  <div class="section-title">Media społecznościowe</div>
-  <p>Obserwuj nas w mediach społecznościowych, aby być na bieżąco z nowościami, dostawami i promocjami:</p>
-  <ul class="links">
-    <li><a href="https://www.facebook.com/p/Doratex-producent-wyrob%C3%B3w-po%C5%9Bcielowych-100063696722502/" target="_blank">FACEBOOK</a></li>
-    <li><a href="https://instagram.com" target="_blank">INSTAGRAM</a></li>
-  </ul>
-
-  <!-- Stopka z kontaktem -->
   <footer>
     <p>Realizujemy także zamówienia hurtowe, dla firm i hoteli. Zapraszamy do kontaktu w celu uzyskania oferty i złożenia zamówienia.</p>
     <p>
-      📧 <a href="mailto:doratex@poczta.onet.pl">doratex@poczta.onet.pl</a><br>
-      📞 <a href="tel:+48606921106">606 921 106</a>
+      <a href="mailto:doratex@poczta.onet.pl">doratex@poczta.onet.pl</a> | 
+      <a href="tel:+48606921106">606 921 106</a>
     </p>
   </footer>
 </body>
 </html>
+
